@@ -158,8 +158,8 @@ h6 {
 
 /* Toggle (mobile) */
 .header .header-toggle {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  /* background-color: var(); */
   font-size: 20px;
   display: flex;
   align-items: center;
