@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - SnapFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  /* ===============================
+   DESKTOP NAVBAR (VISIBLE ALWAYS)
+   =============================== */
+@media (min-width: 992px) {
+
+  #navmenu {
+    position: static;
+    display: block !important;
+    width: auto;
+    height: auto;
+    background: transparent;
+    padding: 0;
+  }
+
+  #navmenu ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #navmenu ul li a {
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+
+  /* hide mobile toggle */
+  #mobile-toggle {
+    display: none;
+  }
+
+  /* hide overlay */
+  .menu-overlay {
+    display: none !important;
+  }
+}
+
+/* ===============================
+   MOBILE NAVIGATION (SLIDE LEFT)
+   =============================== */
+@media (max-width: 991px) {
+  #navmenu {
+    position: fixed;
+    top: 0;
+    left: -280px; 
+    width: 260px;
+    height: 100%;
+    background: #1b1b1b;
+    padding: 20px;
+    transition: left 0.35s ease;
+    z-index: 9999;
+    overflow-y: auto;
+  }
+
+  #navmenu.nav-open {
+    left: 0;
+  }
+
+  #navmenu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #navmenu ul li a {
+    display: block;
+    padding: 12px;
+    color: #fff;
+    border-bottom: 1px solid #333;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 9998;
+    display: none;
+  }
+
+  .menu-overlay.show {
+    display: block;
+  }
+}
+
+</style>
+<body class="index-page">
+<!-- ---------- HTML (replace your current <header> block) ---------- -->
+<header id="header" class="header top-navbar">
+  <div class="header-inner container d-flex align-items-center justify-content-between">
+    <a class="brand fw-bold text-gold" href="#">Portfolio</a>
+
+    <!-- Mobile toggle button -->
+    <i id="mobile-toggle" class="header-toggle mt-1 d-xl-none bi bi-list"></i>
+
+    <!-- Sliding nav -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-person"></i> About</a></li>
+        <li><a href="resume.html"><i class="bi bi-file-earmark-text"></i> Resume</a></li>
+        <li><a href="works.html"><i class="bi bi-images"></i> Portfolio</a></li>
+        <li><a href="service.html"><i class="bi bi-hdd-stack"></i> Services</a></li>
+
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle">
+            <i class="bi bi-menu-button"></i> Dropdown
+            <i class="bi bi-chevron-down toggle-dropdown"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">
+                Deep Dropdown <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li> -->
+
+        <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="work-hero mt-1" style="color: #fff; height: 150px; text-align: center; border-bottom: solid 3px white; border-top: solid 3px white; ">
+<h3 class="display-1"  data-aos="fade-up" data-aos-delay="100">WORKS</h3>
+</section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section p-0">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <div class="col-lg-12 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">All Projects</li>
+                  <li data-filter=".filter-webdesign">Web Design</li>
+                  <li data-filter=".filter-webdevelopment">full-stack Development</li>
+                  <li data-filter=".filter-Graphic">Graphic Design</li>
+                  <!-- <li data-filter=".filter-nature">Nature</li> -->
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-webdesign">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/Capture.PNG" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Photography</span>
+                        <h4>Capturing Moments</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/Capture.PNG" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
+                          <a href=" https://luca4015.github.io/project6/" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-webdesign">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/Capture2.PNG" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Woodcraft Design</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/Capture2.PNG" class="glightbox" title="Woodcraft Design"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://luca4015.github.io/project1/" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-webdesign">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/Capture6.PNG" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Automotive</span>
+                        <h4>Classic Beauty</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/Capture6.PNG" class="glightbox" title="Classic Beauty"><i class="bi bi-plus-lg"></i></a>
+                          <a href=" https://luca4015.github.io/project3/" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-webdesign">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/Capture7.PNG" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Nature</span>
+                        <h4>Natural Growth</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/Capture7.PNG" class="glightbox" title="Natural Growth"><i class="bi bi-plus-lg"></i></a>
+                          <a href=" https://luca4015.github.io/project2/" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-webdesign">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/Capture5.PNG" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Photography</span>
+                        <h4>Urban Stories</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/Capture5.PNG" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
+                          <a href=" https://luca4015.github.io/project5/" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-webdevelopment">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/Screenshot 2025-10-08 105951.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/Screenshot 2025-10-08 105951.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://henzashop.pythonanywhere.com/" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-webdevelopment">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/Screenshot 2025-09-13 121836.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/Screenshot 2025-09-13 121836.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://burgerspot.pythonanywhere.com/" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img1.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/b2d62d236753167.68f216082b662.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img2.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img2.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/bbe295236753167.68f216082a109.jpg" target="_blank" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img3.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img3.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/c90093236753167.68f216082ae32.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img4.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img4.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/a9b09b236753167.68f2160829aac.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img5.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img5.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/8b656e236753167.68f21608279db.jpg" target="_blank" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img6.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img6.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/191629236753167.68f216082d574.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img7.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img7.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/c2b9b6236753167.68f216082d093.jpg" target="_blank" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img8.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img8.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/ca6afc236753167.68f2160826e25.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img9.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img9.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/327ba5236753167.68f2160828194.jpg" target="_blank" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/watch.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/watch.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/e7381c224133785.680623980ffb4.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/hope1.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/hope1.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/4f143c224133785.680623980d66a.jpg" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/mind.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/mind.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/440969224133785.680623980e14b.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/onam.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/onam.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/51eaa4224133785.680623980fa7f.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/headphones.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/headphones.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/d951a5224133785.68062398106e9.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/cristmas.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/cristmas.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/09b6ab224133785.680623980e6d9.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/bellavitta2.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/bellavitta2.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/ef2110224133785.68f21b8951d87.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/ring.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/ring.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/793a68224133785.68f21b89518cb.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/food (2).jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/food (2).jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/ef2110224133785.68f21b8951d87.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/ronaldo.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/ronaldo.jpg" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/37d01c224133785.68f21b8951352.jpg" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/cofee poster.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/cofee poster.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/70f6a8224133785.691ae3b8742d6.png" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-Graphic">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/gd/img9.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web Design</span>
+                        <h4>Digital Experience</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/gd/img9.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mir-cdn.behance.net/v1/rendition/project_modules/source/327ba5236753167.68f2160828194.jpg" target="_blank" target="_blank" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+              </div><!-- End Portfolio Container -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+<footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+const mobileToggle = document.getElementById("mobile-toggle");
+const navmenu = document.getElementById("navmenu");
+
+const overlay = document.createElement("div");
+overlay.classList.add("menu-overlay");
+document.body.appendChild(overlay);
+
+mobileToggle.addEventListener("click", () => {
+  navmenu.classList.toggle("nav-open");
+  overlay.classList.toggle("show");
+});
+
+overlay.addEventListener("click", () => {
+  navmenu.classList.remove("nav-open");
+  overlay.classList.remove("show");
+});
+
+document.querySelectorAll(".dropdown > .dropdown-toggle").forEach(el => {
+  el.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.parentElement.classList.toggle("dropdown-active");
+  });
+});
+
+</script>
+</body>
+
+</html>

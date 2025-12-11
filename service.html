@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - SnapFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  /* ===============================
+   DESKTOP NAVBAR (VISIBLE ALWAYS)
+   =============================== */
+@media (min-width: 992px) {
+
+  #navmenu {
+    position: static;
+    display: block !important;
+    width: auto;
+    height: auto;
+    background: transparent;
+    padding: 0;
+  }
+
+  #navmenu ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #navmenu ul li a {
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+
+  /* hide mobile toggle */
+  #mobile-toggle {
+    display: none;
+  }
+
+  /* hide overlay */
+  .menu-overlay {
+    display: none !important;
+  }
+}
+
+/* ===============================
+   MOBILE NAVIGATION (SLIDE LEFT)
+   =============================== */
+@media (max-width: 991px) {
+  #navmenu {
+    position: fixed;
+    top: 0;
+    left: -280px; 
+    width: 260px;
+    height: 100%;
+    background: #1b1b1b;
+    padding: 20px;
+    transition: left 0.35s ease;
+    z-index: 9999;
+    overflow-y: auto;
+  }
+
+  #navmenu.nav-open {
+    left: 0;
+  }
+
+  #navmenu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #navmenu ul li a {
+    display: block;
+    padding: 12px;
+    color: #fff;
+    border-bottom: 1px solid #333;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 9998;
+    display: none;
+  }
+
+  .menu-overlay.show {
+    display: block;
+  }
+}
+
+</style>
+<body class="index-page">
+<!-- ---------- HTML (replace your current <header> block) ---------- -->
+<header id="header" class="header top-navbar">
+  <div class="header-inner container d-flex align-items-center justify-content-between">
+    <a class="brand fw-bold text-gold" href="#">Portfolio</a>
+
+    <!-- Mobile toggle button -->
+    <i id="mobile-toggle" class="header-toggle mt-1 d-xl-none bi bi-list"></i>
+
+    <!-- Sliding nav -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-person"></i> About</a></li>
+        <li><a href="resume.html"><i class="bi bi-file-earmark-text"></i> Resume</a></li>
+        <li><a href="works.html"><i class="bi bi-images"></i> Portfolio</a></li>
+        <li><a href="service.html"><i class="bi bi-hdd-stack"></i> Services</a></li>
+
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle">
+            <i class="bi bi-menu-button"></i> Dropdown
+            <i class="bi bi-chevron-down toggle-dropdown"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">
+                Deep Dropdown <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li> -->
+
+        <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="service-hero mt-1" style="color: #fff; height: 150px; text-align: center; border-bottom: solid 3px white; border-top: solid 3px white; ">
+<h1 class="display-1"  data-aos="fade-up" data-aos-delay="100">SERVICE</h1>
+</section>
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="service-header">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <div class="service-intro">
+                <h2 class="service-heading">
+                  <div>Innovative business</div>
+                  <div><span>performance solutions</span></div>
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="service-summary">
+                <p>
+                  We integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
+                </p>
+                <a href="services.html" class="service-btn">
+                  View All Services
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Creative  <span>Design</span>
+                </a>
+              </h3>
+              <p>
+             Our Creative Design services blend artistic vision with business objectives to deliver visuals that not only look amazing but drive results.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-gem"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                 Web   <span>Design</span>
+                </a>
+              </h3>
+              <p>
+               Bring your vision to life with custom web design tailored to your brand, audience, and goals. We specialize in creating modern, responsive, and user-friendly websites that not only look great but also perform seamlessly across all devices.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Graphic <span>Design</span>
+                </a>
+              </h3>
+              <p>
+               We offer high-quality graphic design solutions that bring your ideas to life. Whether you're building a brand, launching a product, or promoting a service, our designs are crafted.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Web  <span>Development</span>
+                </a>
+              </h3>
+              <p>
+               Turn your ideas into fully functional, high-performing websites with expert web development tailored to your business needs. We build fast, secure, and scalable websites using the latest technologies and best practices to ensure long-term success.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Web  <span>Hosting</span>
+                </a>
+              </h3>
+              <p>
+                Reliable and secure web hosting solutions tailored to your website’s needs. Enjoy 99.9% uptime, fast loading speeds, and full technical support to keep your site running smoothly.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-camera-video"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Media <span>solutions</span>
+                </a>
+              </h3>
+              <p>
+                Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+<footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+const mobileToggle = document.getElementById("mobile-toggle");
+const navmenu = document.getElementById("navmenu");
+
+const overlay = document.createElement("div");
+overlay.classList.add("menu-overlay");
+document.body.appendChild(overlay);
+
+mobileToggle.addEventListener("click", () => {
+  navmenu.classList.toggle("nav-open");
+  overlay.classList.toggle("show");
+});
+
+overlay.addEventListener("click", () => {
+  navmenu.classList.remove("nav-open");
+  overlay.classList.remove("show");
+});
+
+document.querySelectorAll(".dropdown > .dropdown-toggle").forEach(el => {
+  el.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.parentElement.classList.toggle("dropdown-active");
+  });
+});
+
+</script>
+</body>
+
+</html>
